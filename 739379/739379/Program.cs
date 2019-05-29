@@ -146,9 +146,12 @@ namespace _739379
     {
         public void CharacterSwap()
         {
-            Console.WriteLine("Enter String");
-            string str = Console.ReadLine();
-
+            string str =  "";
+            while(str.Length < 2)
+            {
+                Console.WriteLine("Enter String");
+                str = Console.ReadLine();
+            }
             Console.WriteLine( str.Substring(str.Length - 2) + str.Remove(str.Length - 2));
         }
     }
