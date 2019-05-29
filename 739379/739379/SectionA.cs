@@ -34,8 +34,20 @@ namespace _739379
             //AH object_ah = new AH();
             //object_ah.TripleSum();
 
-            AI object_ai = new AI();
-            object_ai.WithinRange();
+            //AI object_ai = new AI();
+            //object_ai.WithinRange();
+
+            //AJ object_aj = new AJ();
+            //object_aj.AddNaturalForLoop();
+
+            //AK object_ak = new AK();
+            //object_ak.AddNaturalWhileLoop();
+
+            AL object_al = new AL();
+            object_al.EqualOrNot();
+
+
+
 
         }
     }
@@ -170,6 +182,52 @@ namespace _739379
             {
                 Console.WriteLine("Out of range");
             }     
+        }
+    }
+
+    class AJ
+    {
+        public void AddNaturalForLoop()
+        {
+            
+            int sum = 0;
+            for (int i = 1; i <= 10; i++)
+            {
+                sum += i;
+            }
+            Console.WriteLine("sum of first 10 natural numbers is {0}", sum);
+        }
+    }
+
+    class AK
+    {
+        public void AddNaturalWhileLoop()
+        {
+            int i=1, sum = 0;
+            while (i <= 10)
+            {
+                sum += i;
+                i++;
+            }
+            Console.WriteLine("sum of first 10 natural numbers is {0}", sum);
+        }
+    }
+
+    class AL
+    {
+        public void EqualOrNot()
+        {
+            Console.WriteLine("Enter two numbers.. ");
+            int num1 = Convert.ToInt32(Console.ReadLine());
+            int num2 = Convert.ToInt32(Console.ReadLine());
+            if (num1 == num2)
+            {
+                Console.WriteLine("Both numbers are equal.", num1, num2);
+            }
+            else
+            {
+                Console.WriteLine("Numbers are not equal.", num1, num2);
+            }
         }
     }
 }
