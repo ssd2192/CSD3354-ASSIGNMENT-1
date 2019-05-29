@@ -22,9 +22,11 @@ namespace _739379
             //AD object_ad = new AD();
             //object_ad.Multiplication();
 
-            AE object_ae = new AE();
-            object_ae.MultiTable();
+            //AE object_ae = new AE();
+            //object_ae.MultiTable();
 
+            AF object_af = new AF();
+            object_af.CalcAverage();
 
         }
     }
@@ -97,11 +99,24 @@ namespace _739379
                 Console.WriteLine("{0} X {1} = {2}", number, i, (number * i));
 
             }
-
-
         }
     }
 
+    class AF
+    {
+        public void CalcAverage()
+        {
+            double num1, num2, num3, num4, result;
+            Console.WriteLine("Enter 4 numbers");
+            num1 = Convert.ToDouble(Console.ReadLine());
+            num2 = Convert.ToDouble(Console.ReadLine());
+            num3 = Convert.ToDouble(Console.ReadLine());
+            num4 = Convert.ToDouble(Console.ReadLine());
+
+            result = (num1 + num2 + num3 + num4) / 4;
+            Console.WriteLine("The average of {0}, {1}, {2}, {3} is {4} ", num1, num2, num3, num4, result);
+        }
+    }
 
 
 }
