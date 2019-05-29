@@ -10,11 +10,16 @@ namespace _739379
     {
         public void ManagerA()
         {
-            AA object_AA = new AA();
-            object_AA.PrintName();
+            //AA object_AA = new AA();
+            //object_AA.PrintName();
 
-            AB object_ab = new AB();
-            object_ab.simpleMaths();
+            //AB object_ab = new AB();
+            //object_ab.simpleMaths();
+
+            AC object_ac = new AC();
+            object_ac.swap();
+
+
         }
     }
     class AA
@@ -40,5 +45,26 @@ namespace _739379
             Console.WriteLine("Sum: {0}, Product: {1}, Division: {2}",(x+y),(x*y),(x/y));
         }
     }
+
+    class AC
+    {
+        public void swap()
+        {
+            int x, y;
+            Console.WriteLine("Enter value of x");
+            x = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Enter value of y");
+            y = Convert.ToInt32(Console.ReadLine());
+
+            int temp =x;
+            x = y;
+            y = temp;
+
+            Console.WriteLine("After Swaping: x is {0}, y is {1}", x, y);
+            
+        }
+    }
+
+
 
 }

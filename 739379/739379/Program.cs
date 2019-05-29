@@ -19,26 +19,26 @@ namespace _739379
     {
         public void Run()
         {
-            A_B1 object_b1 = new A_B1();
-            object_b1.PrimeCheck();
+            //A_B1 object_b1 = new A_B1();
+            //object_b1.PrimeCheck();
 
-            B_B4 object_b4 = new B_B4();
-            object_b4.SumNatural();
+            //B_B4 object_b4 = new B_B4();
+            //object_b4.SumNatural();
 
-            B_B5 object_b5 = new B_B5();
-            object_b5.CountSpace();
+            //B_B5 object_b5 = new B_B5();
+            //object_b5.CountSpace();
 
-            A_AI obj = new A_AI();
-            obj.RunAI();
+            //A_AI obj = new A_AI();
+            //obj.RunAI();
 
-            B_B2 object_b2 = new B_B2();
-            object_b2.CharacterSwap();
+            //B_B2 object_b2 = new B_B2();
+            //object_b2.CharacterSwap();
 
-            B_B3 object_b3 = new B_B3();
-            object_b3.PrintMiddle();
+            //B_B3 object_b3 = new B_B3();
+            //object_b3.PrintMiddle();
 
-            B_B33 object_b33 = new B_B33();
-            object_b33.SwapLast();
+            //B_B33 object_b33 = new B_B33();
+            //object_b33.SwapLast();
 
             SectionA sa = new SectionA();
             sa.ManagerA();
