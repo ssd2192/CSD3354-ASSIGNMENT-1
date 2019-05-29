@@ -19,8 +19,11 @@ namespace _739379
             //AC object_ac = new AC();
             //object_ac.swap();
 
-            AD object_ad = new AD();
-            object_ad.Multiplication();
+            //AD object_ad = new AD();
+            //object_ad.Multiplication();
+
+            AE object_ae = new AE();
+            object_ae.MultiTable();
 
 
         }
@@ -82,6 +85,23 @@ namespace _739379
             Console.WriteLine("Multiplication of numbers: {0} x {1} x {2} = {3}", x, y, z, (x*y*z));
         }
     }
+
+    class AE
+    {
+        public void MultiTable()
+        {
+            Console.Write("Enter the number (Table to be calculated) : ");
+            int number = Convert.ToInt32(Console.ReadLine());
+            for (int i = 1; i <= 10; i++)
+            {
+                Console.WriteLine("{0} X {1} = {2}", number, i, (number * i));
+
+            }
+
+
+        }
+    }
+
 
 
 }
