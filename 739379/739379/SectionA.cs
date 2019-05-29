@@ -31,8 +31,11 @@ namespace _739379
             //AG object_ag = new AG();
             //object_ag.PrintName();
 
-            AH object_ah = new AH();
-            object_ah.TripleSum();
+            //AH object_ah = new AH();
+            //object_ah.TripleSum();
+
+            AI object_ai = new AI();
+            object_ai.WithinRange();
 
         }
     }
@@ -150,6 +153,23 @@ namespace _739379
             {
                 Console.WriteLine("sum of two numbers is {0}", (num1+num2));
             }
+        }
+    }
+
+    class AI
+    {
+        public void WithinRange()
+        {
+            Console.Write("Enter Number.. ");
+            int a = Convert.ToInt32(Console.ReadLine());
+            if (Math.Abs(a - 100) <= 20 || Math.Abs(a + 100) <= 20)
+            {
+                Console.WriteLine("Within Range");
+            }
+            else
+            {
+                Console.WriteLine("Out of range");
+            }     
         }
     }
 }
