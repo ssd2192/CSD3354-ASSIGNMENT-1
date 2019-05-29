@@ -37,6 +37,9 @@ namespace _739379
             B_B3 object_b3 = new B_B3();
             object_b3.PrintMiddle();
 
+            B_B33 object_b33 = new B_B33();
+            object_b33.SwapLast();
+
             Console.ReadKey();
         }
     }
@@ -45,8 +48,8 @@ namespace _739379
     {
         public void PrimeCheck()
         {
-            int counter = 0, sum = 0, n=2;
-           
+            int counter = 0, sum = 0, n = 2;
+
             while (counter < 500)
             {
                 if (checkSum(n) == 0)
@@ -61,7 +64,7 @@ namespace _739379
         }
         public int checkSum(int num)
         {
-            int i, m = 0, flag = 0;    
+            int i, m = 0, flag = 0;
             m = num / 2;
 
             for (i = 2; i <= m; i++)
@@ -78,12 +81,12 @@ namespace _739379
             }
             return flag;
         }
-       
+
     }
 
     class B_B4
     {
-         int printNatural(int start, int n)
+        int printNatural(int start, int n)
         {
             if (n < 1)
             {
@@ -126,7 +129,7 @@ namespace _739379
             Console.WriteLine("Number of spaces=" + count);
             Console.ReadLine();
         }
-        
+
     }
 
     class A_AI
@@ -137,7 +140,7 @@ namespace _739379
             n = Convert.ToInt32(Console.ReadLine());
             Console.WriteLine(result(n));
 
-            
+
         }
         public static bool result(int n)
         {
@@ -151,13 +154,13 @@ namespace _739379
     {
         public void CharacterSwap()
         {
-            string str =  "";
-            while(str.Length < 2)
+            string str = "";
+            while (str.Length < 2)
             {
                 Console.WriteLine("Enter String");
                 str = Console.ReadLine();
             }
-            Console.WriteLine( str.Substring(str.Length - 2) + str.Remove(str.Length - 2));
+            Console.WriteLine(str.Substring(str.Length - 2) + str.Remove(str.Length - 2));
         }
     }
 
@@ -166,12 +169,38 @@ namespace _739379
         public void PrintMiddle()
         {
             string str = "";
-            while ( str.Length < 2 || (str.Length%2) != 0 )
+            while (str.Length < 2 || (str.Length % 2) != 0)
             {
                 Console.WriteLine("Enter valid String");
                 str = Console.ReadLine();
             }
-            Console.WriteLine( str.Substring(str.Length / 2 - 1, 2));
+            Console.WriteLine(str.Substring(str.Length / 2 - 1, 2));
         }
     }
+
+    class B_B33
+    {
+        public void SwapLast()
+        {
+            string str = "";
+            
+                Console.WriteLine("Enter valid String");
+                str = Console.ReadLine();
+            if(str.Length > 1)
+            {
+
+                Console.WriteLine(str.Substring(str.Length - 1) + str.Substring(1, str.Length - 2) + str.Substring(0, 1));
+
+            }
+            else
+            {
+                Console.WriteLine(str);
+            }
+           
+
+        }
+
+        
+    }
+
 }
