@@ -10,41 +10,41 @@ namespace _739379
     {
         public void ManagerA()
         {
-            //AA object_AA = new AA();
-            //object_AA.PrintName();
+            AA object_AA = new AA();
+            object_AA.PrintName();
 
-            //AB object_ab = new AB();
-            //object_ab.simpleMaths();
+            AB object_ab = new AB();
+            object_ab.simpleMaths();
 
-            //AC object_ac = new AC();
-            //object_ac.swap();
+            AC object_ac = new AC();
+            object_ac.swap();
 
-            //AD object_ad = new AD();
-            //object_ad.Multiplication();
+            AD object_ad = new AD();
+            object_ad.Multiplication();
 
-            //AE object_ae = new AE();
-            //object_ae.MultiTable();
+            AE object_ae = new AE();
+            object_ae.MultiTable();
 
-            //AF object_af = new AF();
-            //object_af.CalcAverage();
+            AF object_af = new AF();
+            object_af.CalcAverage();
 
-            //AG object_ag = new AG();
-            //object_ag.PrintName();
+            AG object_ag = new AG();
+            object_ag.PrintName();
 
-            //AH object_ah = new AH();
-            //object_ah.TripleSum();
+            AH object_ah = new AH();
+            object_ah.TripleSum();
 
-            //AI object_ai = new AI();
-            //object_ai.WithinRange();
+            AI object_ai = new AI();
+            object_ai.WithinRange();
 
-            //AJ object_aj = new AJ();
-            //object_aj.AddNaturalForLoop();
+            AJ object_aj = new AJ();
+            object_aj.AddNaturalForLoop();
 
-            //AK object_ak = new AK();
-            //object_ak.AddNaturalWhileLoop();
+            AK object_ak = new AK();
+            object_ak.AddNaturalWhileLoop();
 
-            //AL object_al = new AL();
-            //object_al.EqualOrNot();
+            AL object_al = new AL();
+            object_al.EqualOrNot();
 
             AM object_am = new AM();
             object_am.LargestOfThree();
@@ -54,17 +54,19 @@ namespace _739379
 
         }
     }
+
+    // Input your name and hello in separate lines
     class AA
     {
         public void PrintName()
         {
-            // input your name and print hello with your name in a separate line
             Console.Write("Enter your name.. ");
             String name = Console.ReadLine();
             Console.WriteLine("Hello! \n{0}", name);
         }
     }
 
+    //Sum Product Division of two numbers
     class AB
     {
         public void simpleMaths()
@@ -78,6 +80,7 @@ namespace _739379
         }
     }
 
+    //Swapping two numbers
     class AC
     {
         public void swap()
@@ -97,6 +100,7 @@ namespace _739379
         }
     }
 
+    //Multiple of 3 numbers
     class AD
     {
         public void Multiplication()
@@ -112,6 +116,7 @@ namespace _739379
         }
     }
 
+    //Print Table of user enterd number
     class AE
     {
         public void MultiTable()
@@ -126,6 +131,7 @@ namespace _739379
         }
     }
 
+    //Average of 4 numbers entered
     class AF
     {
         public void CalcAverage()
@@ -142,6 +148,7 @@ namespace _739379
         }
     }
 
+    //Print name
     class AG
     {
         public void PrintName()
@@ -152,6 +159,7 @@ namespace _739379
         }
     }
 
+    //Triple the sum if numbers are equal
     class AH
     {
         public void TripleSum()
@@ -171,6 +179,7 @@ namespace _739379
         }
     }
 
+    //Find if number is 20 within 100
     class AI
     {
         public void WithinRange()
@@ -188,6 +197,7 @@ namespace _739379
         }
     }
 
+    //Add Natural numbers with for loop
     class AJ
     {
         public void AddNaturalForLoop()
@@ -202,6 +212,7 @@ namespace _739379
         }
     }
 
+    // Add natural numbers with while loop
     class AK
     {
         public void AddNaturalWhileLoop()
@@ -216,6 +227,7 @@ namespace _739379
         }
     }
 
+    //Evaluate if 2 numbers equal or not
     class AL
     {
         public void EqualOrNot()
@@ -234,6 +246,7 @@ namespace _739379
         }
     }
 
+    //Firnd the Largest of 3 numbers
     class AM
     {
         public void LargestOfThree()
