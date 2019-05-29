@@ -40,6 +40,9 @@ namespace _739379
             B_B33 object_b33 = new B_B33();
             object_b33.SwapLast();
 
+            SectionA sa = new SectionA();
+            sa.ManagerA();
+
             Console.ReadKey();
         }
     }
