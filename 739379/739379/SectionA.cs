@@ -28,8 +28,11 @@ namespace _739379
             //AF object_af = new AF();
             //object_af.CalcAverage();
 
-            AG object_ag = new AG();
-            object_ag.PrintName();
+            //AG object_ag = new AG();
+            //object_ag.PrintName();
+
+            AH object_ah = new AH();
+            object_ah.TripleSum();
 
         }
     }
@@ -131,5 +134,22 @@ namespace _739379
         }
     }
 
+    class AH
+    {
+        public void TripleSum()
+        {
+            Console.WriteLine("Enter two numbers");
+            int num1 = Convert.ToInt32(Console.ReadLine());
+            int num2 = Convert.ToInt32(Console.ReadLine());
 
+            if (num1 == num2)
+            {
+                Console.WriteLine("Both numbers are equal. Their triplet is {0}", (num1+num2)*3);
+            }
+            else
+            {
+                Console.WriteLine("sum of two numbers is {0}", (num1+num2));
+            }
+        }
+    }
 }
