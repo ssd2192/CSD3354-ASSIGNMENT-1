@@ -25,8 +25,11 @@ namespace _739379
             //AE object_ae = new AE();
             //object_ae.MultiTable();
 
-            AF object_af = new AF();
-            object_af.CalcAverage();
+            //AF object_af = new AF();
+            //object_af.CalcAverage();
+
+            AG object_ag = new AG();
+            object_ag.PrintName();
 
         }
     }
@@ -115,6 +118,16 @@ namespace _739379
 
             result = (num1 + num2 + num3 + num4) / 4;
             Console.WriteLine("The average of {0}, {1}, {2}, {3} is {4} ", num1, num2, num3, num4, result);
+        }
+    }
+
+    class AG
+    {
+        public void PrintName()
+        {
+            Console.WriteLine("Enter Your name");
+            string name = Console.ReadLine();
+            Console.WriteLine("{0}, You look older than 20.", name);
         }
     }
 
