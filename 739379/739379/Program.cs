@@ -19,8 +19,13 @@ namespace _739379
     {
         public void Run()
         {
-            A_B1 object_b1 = new A_B1();
-            object_b1.PrimeCheck();
+            //A_B1 object_b1 = new A_B1();
+            //object_b1.PrimeCheck();
+
+            B_B2 object_b2 = new B_B2();
+            object_b2.SumNatural();
+
+            Console.ReadKey();
         }
     }
 
@@ -77,6 +82,25 @@ namespace _739379
     }
     class B_B2
     {
+         int printNatural(int start, int n)
+        {
+            if (n < 1)
+            {
+                return start;
+            }
+            n--;
+            Console.Write(" {0} ", start);
+            return printNatural(start + 1, n);
+        }
+        public void SumNatural()
+        {
+            Console.WriteLine("Recursion : Print the first n natural number :");
+            Console.WriteLine(" How many numbers to print : ");
+            int n = Convert.ToInt32(Console.ReadLine());
+            // Call recursive method with two parameters	
+            printNatural(1, n);
+            Console.WriteLine();
+        }
 
     }
 }
