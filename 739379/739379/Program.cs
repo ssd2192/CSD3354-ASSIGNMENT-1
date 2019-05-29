@@ -28,6 +28,9 @@ namespace _739379
             B_B5 object_b5 = new B_B5();
             object_b5.CountSpace();
 
+            A_AI obj = new A_AI();
+            obj.RunAI();
+
             Console.ReadKey();
         }
     }
@@ -117,5 +120,22 @@ namespace _739379
             Console.ReadLine();
         }
         
+    }
+    class A_AI
+    {
+        public void RunAI()
+        {
+            int n;
+            n = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine(result(n));
+
+            
+        }
+        public static bool result(int n)
+        {
+            if (Math.Abs(n - 100) <= 20 || Math.Abs(n + 100) <= 20)
+                return true;
+            return false;
+        }
     }
 }
