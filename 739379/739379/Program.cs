@@ -22,14 +22,17 @@ namespace _739379
             A_B1 object_b1 = new A_B1();
             object_b1.PrimeCheck();
 
-            B_B2 object_b2 = new B_B2();
-            object_b2.SumNatural();
+            B_B4 object_b4 = new B_B4();
+            object_b4.SumNatural();
 
             B_B5 object_b5 = new B_B5();
             object_b5.CountSpace();
 
             A_AI obj = new A_AI();
             obj.RunAI();
+
+            B_B2 object_b2 = new B_B2();
+            object_b2.CharacterSwap();
 
             Console.ReadKey();
         }
@@ -74,7 +77,7 @@ namespace _739379
         }
        
     }
-    class B_B2
+    class B_B4
     {
          int printNatural(int start, int n)
         {
@@ -136,6 +139,17 @@ namespace _739379
             if (Math.Abs(n - 100) <= 20 || Math.Abs(n + 100) <= 20)
                 return true;
             return false;
+        }
+    }
+
+    class B_B2
+    {
+        public void CharacterSwap()
+        {
+            Console.WriteLine("Enter String");
+            string str = Console.ReadLine();
+
+            Console.WriteLine( str.Substring(str.Length - 2) + str.Remove(str.Length - 2));
         }
     }
 }
