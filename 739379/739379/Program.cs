@@ -34,6 +34,9 @@ namespace _739379
             B_B2 object_b2 = new B_B2();
             object_b2.CharacterSwap();
 
+            B_B3 object_b3 = new B_B3();
+            object_b3.PrintMiddle();
+
             Console.ReadKey();
         }
     }
@@ -77,6 +80,7 @@ namespace _739379
         }
        
     }
+
     class B_B4
     {
          int printNatural(int start, int n)
@@ -124,6 +128,7 @@ namespace _739379
         }
         
     }
+
     class A_AI
     {
         public void RunAI()
@@ -153,6 +158,20 @@ namespace _739379
                 str = Console.ReadLine();
             }
             Console.WriteLine( str.Substring(str.Length - 2) + str.Remove(str.Length - 2));
+        }
+    }
+
+    class B_B3
+    {
+        public void PrintMiddle()
+        {
+            string str = "";
+            while ( str.Length < 2 || (str.Length%2) != 0 )
+            {
+                Console.WriteLine("Enter valid String");
+                str = Console.ReadLine();
+            }
+            Console.WriteLine( str.Substring(str.Length / 2 - 1, 2));
         }
     }
 }
