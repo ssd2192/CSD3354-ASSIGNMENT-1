@@ -43,8 +43,11 @@ namespace _739379
             //AK object_ak = new AK();
             //object_ak.AddNaturalWhileLoop();
 
-            AL object_al = new AL();
-            object_al.EqualOrNot();
+            //AL object_al = new AL();
+            //object_al.EqualOrNot();
+
+            AM object_am = new AM();
+            object_am.LargestOfThree();
 
 
 
@@ -227,6 +230,29 @@ namespace _739379
             else
             {
                 Console.WriteLine("Numbers are not equal.", num1, num2);
+            }
+        }
+    }
+
+    class AM
+    {
+        public void LargestOfThree()
+        {
+            Console.WriteLine("Enter 3 Numbers to check the Largest Number");
+            int num1 = Convert.ToInt32(Console.ReadLine());
+            int num2 = Convert.ToInt32(Console.ReadLine());
+            int num3 = Convert.ToInt32(Console.ReadLine());
+            if (num1 > num2 && num1 > num3)
+            {
+                Console.WriteLine("Largest is {0}", num1); 
+            }
+            else if (num2>num1 && num2 > num3)
+            {
+                Console.WriteLine("Largest is {0}",num2);
+            }
+            else
+            {
+                Console.WriteLine("Largest is {0}", num3);
             }
         }
     }
