@@ -16,8 +16,11 @@ namespace _739379
             //AB object_ab = new AB();
             //object_ab.simpleMaths();
 
-            AC object_ac = new AC();
-            object_ac.swap();
+            //AC object_ac = new AC();
+            //object_ac.swap();
+
+            AD object_ad = new AD();
+            object_ad.Multiplication();
 
 
         }
@@ -65,6 +68,20 @@ namespace _739379
         }
     }
 
+    class AD
+    {
+        public void Multiplication()
+        {
+            Console.Write("Enter First Number");
+            int x = Convert.ToInt32(Console.ReadLine());
+            Console.Write("Enter Second Number");
+            int y = Convert.ToInt32(Console.ReadLine());
+            Console.Write("Emter Third Number");
+            int z = Convert.ToInt32(Console.ReadLine());
+
+            Console.WriteLine("Multiplication of numbers: {0} x {1} x {2} = {3}", x, y, z, (x*y*z));
+        }
+    }
 
 
 }
