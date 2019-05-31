@@ -132,6 +132,7 @@ namespace _739379
             if (str.Length > 1)
             {
                 Console.WriteLine(str.Substring(str.Length - 1) + str.Substring(1, str.Length - 2) + str.Substring(0, 1));
+                Console.WriteLine(str.Substring(0, str.Length - 2) + str.Substring(str.Length - 1) + str.Substring(str.Length - 2, 1));
             }
             else
             {
